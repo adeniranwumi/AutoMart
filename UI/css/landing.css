@@ -165,6 +165,14 @@ header nav ul li a{
         height: 40px !important;
         padding: 10px;
     }
+
+    #footer-list{
+        margin-left: 400px;
+    }
+
+    .footer-sm{
+        margin-right: 400px;
+    }
 }
 .body-image{
     width: 100%;
