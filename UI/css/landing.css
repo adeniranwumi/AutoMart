@@ -128,3 +128,34 @@ header nav ul li a{
     color: #b70e17;
     line-height: 20px;
 }
+
+@media only screen and (min-width: 1000px){
+    header .header-brand{
+        margin: 35px 0;
+        text-align: left;
+        padding: 0 20px 0 40px;
+        line-height: 30px;
+        border-right: 3px solid #b70e17;
+        float: left;
+    }
+
+    header nav ul{
+        margin: 35px 0;
+        float: left;
+    }
+
+    header nav ul li{
+        padding: 0 20px 0 20px;
+        border-right: 3px solid #b70e17;
+
+    }
+
+    #no-border{
+        border-right:none;
+    }
+    
+    header nav ul li a{
+        line-height: 30px;
+        opacity: 0.7;
+    }
+}
