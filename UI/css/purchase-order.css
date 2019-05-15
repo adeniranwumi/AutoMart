@@ -21,3 +21,35 @@
     margin-bottom: 20px;
     text-align: center;
 }
+
+input[type = "text"]{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 5px;
+    background: rgba(0, 0, 0, 0.10);
+    outline: none;
+    border: 1px solid #818489 ;
+    border-radius: 5px;
+    margin: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+input[type = "submit"]{
+    width: 200px;
+    box-sizing: border-box;
+    padding: 10px 0;
+    outline: none;
+    border: none;
+    margin: 30px auto 0px auto;
+    background: #b70e17;
+    opacity: 0.8;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #fff;
+    display: block;
+}
+input[type = "submit"]:hover{
+    background: #bf1313;
+    opacity: 1;
+}
