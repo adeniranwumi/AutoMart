@@ -41,6 +41,32 @@ main{
     height: calc(100vh - 100px);
 }
 
+.card img{
+    width: 300px;
+    height: 250px;
+    padding-top: 10px;
+}
+
+.column{
+    width: 25%;
+    float: left;
+    padding: 0 10px;
+}
+
+.row ::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media only screen and (max-width: 600px){
+    .column{
+        width: 100%;
+        display: block;
+        margin-bottom: 15px;
+    }
+}
+
 @media only screen and (min-width: 1000px){
     header .header-brand{
         margin: 35px 0;
@@ -78,6 +104,42 @@ main{
     .footer-sm{
         margin-right: 400px;
     }
+
+}
+
+footer{
+    width: calc(100% - 60px);
+    padding: 20px 30px;
+    margin-top: 20px;
+}
+
+footer ul{
+    width: fit-content;
+    float: left;
+}
+
+footer ul li{
+    display: block;
+    list-style: none;
+}
+
+footer ul li a{
+    font-family: 'Roboto Slab';
+    font-weight: 500;
+    font-size: 15px;
+    color: #b70e17;
+    line-height: 35px;
+}
+
+.footer-sm{
+    width: 40px;
+    float: right;
+}
+
+.footer-sm img{
+    width: 100%;
+    height: 20%;
+    margin: 3px;
 }
 
 
