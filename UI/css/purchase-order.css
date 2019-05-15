@@ -1,0 +1,23 @@
+#order-main{
+    height: calc(100vh-100px);
+}
+
+.order-wrap{
+    max-width: 750px;
+    border-radius: 20px;
+    margin: auto;
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    padding: 40px;
+    color: black;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.order-wrap h2{
+    font-size: 30px;
+    font-family: 'Roboto Slab';
+    margin-bottom: 20px;
+    text-align: center;
+}

@@ -154,7 +154,6 @@ main{
 footer{
     width: calc(100% - 60px);
     padding: 20px 30px;
-    margin-top: 1000px;
     padding: 10px;
 }
 
