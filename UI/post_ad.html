@@ -3,11 +3,26 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="css/landing.css">    
+        <link rel="stylesheet" type="text/css" href="css/landing.css">  
+        <link rel="stylesheet" type="text/css" href="css/dashboard.">   
         <link rel="stylesheet" type="text/css" href="css/core.css">
         <title>Dashboard</title>
     </head>
     <body>
+        <header class="dash-header">
+            <a href="landing_page.html" class="header-brand">AutoCart</a>
+    
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Buy Cars</a></li>
+                    <li><a href="post_ad.html">Sell Cars</a></li>
+                    <li><a href="#">Orders</a></li>
+                    <li id="no-border"><a href="#">Posts</a></li>
+                </ul>
+            </nav>
+        </header>
+    
         <main class="body-image">
             <div class="wrap">
                 <h2>Want to sell a car? Please give a brief description below</h2>
@@ -17,7 +32,7 @@
                     <input type="text" placeholder="Body type..." required>
                     <input type="text" placeholder="New or used?..." required>
                     <input type="text" placeholder="Price..." required>
-                    <input type="file" id="img-file" >
+                    <input type="file" id="img-file">
                     <button type="button" id="choose-file-btn">CHOOSE A FILE</button>
                     <span id="img-file-txt">No files chosen</span>
                     <input type="submit" value="Submit" required>
