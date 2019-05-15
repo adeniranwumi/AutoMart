@@ -164,7 +164,7 @@ footer ul li a{
     margin: 3px;
 }
 
-/*SIGN UP /SIGN IN PAGE*/
+/*SIGN UP \ SIGN IN PAGE*/
 .wrap{
     max-width: 450px;
     border-radius: 20px;
@@ -215,4 +215,20 @@ input[type = "submit"]{
 input[type = "submit"]:hover{
     background: #bf1313;
     opacity: 0.8;
+}
+
+/***UNIQUE STYLING FOR FILE INPUT IN SELL-CAR PAGE**/
+
+#choose-file-btn{
+    padding: 10px;
+    color: white;
+    background: #b70e17; 
+    border: none;
+    border-radius: 5px;
+    margin: 5px 8px;
+}
+
+#choose-file-btn:hover{
+    background: #bf1313;
+    opacity: 0.6;
 }
