@@ -53,3 +53,9 @@ input[type = "submit"]:hover{
     background: #bf1313;
     opacity: 1;
 }
+
+@media only screen and (max-width: 600px){
+    .order-wrap{
+        margin: 15px 10px;
+    }
+}
