@@ -196,6 +196,7 @@ input[type = "text"], input[type= "password"]{
     border-radius: 5px;
     margin: 5px;
     font-weight: bold;
+    font-size: 15px;
 }
 
 input[type = "submit"]{
@@ -226,9 +227,14 @@ input[type = "submit"]:hover{
     border: none;
     border-radius: 5px;
     margin: 5px 8px;
+    font-family: 'Roboto Slab';
 }
 
 #choose-file-btn:hover{
     background: #bf1313;
     opacity: 0.6;
+}
+
+#img-file-txt{
+    font-family: 'Roboto Slab';
 }
