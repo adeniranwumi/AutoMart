@@ -93,3 +93,19 @@ div.edit-btn h2{
         
     }
 }
+
+.hide-content{
+    display: none;
+}
+
+.show-content{
+    display: block;
+}
+
+input[type = "text"]{
+    width: 70%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 7px;
+    margin: auto;
+}
