@@ -34,7 +34,7 @@ header nav ul li a{
     font-weight: 500;
     font-size: 15px;
     color: #b70e17;
-    line-height: 20px;
+    line-height: 20px
 }
 
 @media only screen and (min-width: 1000px){

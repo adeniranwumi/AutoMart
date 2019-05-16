@@ -1,62 +1,136 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="css/specific-car.css">
-        <link rel="stylesheet" type="text/css" href="css/dashboard.css">  
-        <link rel="stylesheet" type="text/css" href="css/core.css">
-        <title>Car Specs</title>
-    </head>
-    <body>
-        <header class="dash-header">
-            <a href="landing_page.html" class="header-brand">AutoCart</a>
-    
-            <nav>
-                <ul>
-                    <li><a href="user_dashboard.html">Home</a></li>
-                    <li><a href="#">Buy Cars</a></li>
-                    <li><a href="post_ad.html">Sell Cars</a></li>
-                    <li><a href="#">Orders</a></li>
-                    <li id="no-border"><a href="#">Posts</a></li>
-                </ul>
-            </nav>
-        </header>
 
-        <main>
-            <div class="container">
-                 <h1>Audi iJ5657</h1>
-                 <img class="spec-img" src="./images/audi.jpg" alt="audi_sports_car">
-                <div class="spec-wrap">
-                    <table>
-                        <tr>
-                            <td>Vehicle Specifications</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </main>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/specific-car.css">
+    <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+    <link rel="stylesheet" type="text/css" href="css/core.css">
+    <title>Car Specs</title>
+</head>
 
-        <footer>
-            <ul id="footer-list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
+<body>
+    <header class="dash-header">
+        <a href="landing_page.html" class="header-brand">AutoCart</a>
+
+        <nav>
+            <ul>
+                <li><a href="user_dashboard.html">Home</a></li>
                 <li><a href="#">Buy Cars</a></li>
+                <li><a href="post_ad.html">Sell Cars</a></li>
+                <li><a href="#">Orders</a></li>
+                <li id="no-border"><a href="#">Posts</a></li>
             </ul>
-            <div class="footer-sm">
-                <ul>
-                    <a href="#">
-                        <img alt="facebook_icon" src="./images/facebook-logo-button.png">
-                    </a>
-                    <a href="#">
-                        <img alt="twitter_icon" src="./images/twitter-logo-button.png">
-                    </a>
-                    <a href="#">
-                        <img alt="instagram_icon" src="./images/instagram.png">
-                    </a>
-                </ul>
-            </div>  
-        </footer>
-    </body>
-    </html>    
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Audi iJ5657</h1>
+            <img class="spec-img" src="./images/audi.jpg" alt="audi_sports_car">
+            <div class="spec-wrap" style="overflow-x:auto;">
+                <table align="center" class="spec-table">
+                    <tbody>
+                        <tr>
+                            <th>Car spec</th>
+                            <th>Details</th>
+                        </tr>
+
+                        <tr>
+                            <td>Manufacturer</td>
+                            <td>Audi</td>
+                        </tr>
+
+                        <tr>
+                            <td>Model</td>
+                            <td>iJ5657</td>
+                        </tr>
+
+                        <tr>
+                            <td>Body type</td>
+                            <td>Car</td>
+                        </tr>
+
+                        <tr>
+                            <td>Price</td>
+                            <td>18,567,000</td>
+                        </tr>
+
+                        <tr>
+                            <td>Vehicle condition</td>
+                            <td>New</td>
+                        </tr>
+
+                        <tr>
+                            <td>Color</td>
+                            <td>Black</td>
+                        </tr>
+
+                        <tr>
+                            <td>Mileage</td>
+                            <td>3,000k km</td>
+                        </tr>
+
+                        <tr>
+                            <td>Year of expiration of tyres</td>
+                            <td>2023</td>
+                        </tr>
+
+                        <tr>
+                            <td>Car doors</td>
+                            <td>4</td>
+                        </tr>
+
+                        <tr>
+                            <td>Number of seats</td>
+                            <td>4</td>
+                        </tr>
+
+                        <tr>
+                            <td>Seat type</td>
+                            <td>Leather</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="base-link">
+                    <div>
+                        <a href="user_dashboard.html">
+                            <h2><span class="symbol">&larr; </span> Go Back</h2>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="purchase-order.html">
+                            <h2>Order <span class="symbol"> &rarr;</span></h2>
+                        </a>
+                    </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <ul id="footer-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="footer-sm">
+            <ul>
+                <a href="#">
+                    <img alt="facebook_icon" src="./images/facebook-logo-button.png">
+                </a>
+                <a href="#">
+                    <img alt="twitter_icon" src="./images/twitter-logo-button.png">
+                </a>
+                <a href="#">
+                    <img alt="instagram_icon" src="./images/instagram.png">
+                </a>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
