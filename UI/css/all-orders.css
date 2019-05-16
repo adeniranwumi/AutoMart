@@ -81,3 +81,15 @@ div.edit-btn h2{
     text-align: center;
     color: white;
 }
+
+@media only screen and (max-width: 700px){
+    .img-wrapper img {
+        vertical-align: middle;
+        margin-left: 55px;
+    }
+
+    div.order-list{
+        margin: 20px 7px;
+        
+    }
+}
