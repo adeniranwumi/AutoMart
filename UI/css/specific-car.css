@@ -1,0 +1,121 @@
+main{
+    height: calc(100vh-100px);
+}
+
+.container{
+    max-width: 900px;
+    height: 1100px;
+    border-radius: 20px;
+    margin: auto;
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    padding: 40px;
+    color: black;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.container h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Catamaran';
+}
+
+.spec-img{
+    width: 500px;
+    height: 400px;
+    display: block;
+    padding-top: 10px;
+    border-radius: 5%;
+    margin: 30px auto 0px auto;
+
+}
+
+.spec-table{
+    font-family: 'Catamaran';
+    border-collapse: collapse;
+    border-spacing: 0;
+    opacity: 0.9;
+    width: 100%;
+    line-height: 30px;
+    padding: 10px;
+    margin-top: 40px;
+    border: 1px solid white;
+    padding-top:5px;
+}
+
+.spec-wrap h3{
+    font-size: 30px;
+    font-family: 'Catamaran';
+    text-align: center;
+}
+
+.spec-wrap table tr:nth-child(even){
+    background-color: rgba(239, 119, 119, .08);
+}
+
+th{
+    font-size: 25px;
+}
+
+ td{
+    text-align: center;
+}
+
+.base-link{
+    display: flex;
+    width: 70%;
+    margin: 30px auto; 
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.base-link div{   
+    width: 100%; 
+}
+.base-link div:last-child{ 
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.base-link h2{
+    font-size: 28px;
+    padding-left: 10px;
+}
+
+.base-link a{
+    color: #b70e17;
+
+}
+
+.base-link span.symbol{
+    font-size: 50px;
+    font-weight: 800;
+}
+
+@media only screen and (max-width:600px){
+    .container{
+        margin: auto 10px;
+    }
+    
+    .base-link{
+        width: 100%;
+    }
+
+    .spec-img{
+        width: 100%;
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    a div h2{
+        font-size: 18px;
+        padding-left: 10px;
+    }
+    
+    span.symbol{
+        font-size: 23px;
+        font-weight: 800;
+    }
+}
