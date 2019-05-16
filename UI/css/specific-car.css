@@ -17,10 +17,11 @@ main{
 }
 
 .container h1{
-    font-size: 30px;
+    font-size: 60px;
     font-family: 'Roboto Slab';
     margin-bottom: 20px;
     text-align: center;
+    font-family: 'Catamaran';
 }
 
 .spec-img{
@@ -31,4 +32,9 @@ main{
     border-radius: 5%;
     margin: 30px auto 0px auto;
 
+}
+
+.spec-wrap table{
+    display: block;
+    margin: 30px auto 0px auto;
 }
