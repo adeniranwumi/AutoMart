@@ -97,3 +97,7 @@ div.edit-btn h2{
 .hide-content{
     display: none;
 }
+
+.show-content{
+    display: inline-block;
+}

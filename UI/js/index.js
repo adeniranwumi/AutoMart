@@ -2,7 +2,6 @@ const imgFileInput = document.getElementById("img-file-input");
 const chooseFileBtn = document.getElementById("choose-file-btn");
 const imgFileText = document.getElementById("img-file-txt");
 
-
 chooseFileBtn.addEventListener("click", () => {
     imgFileInput.click();
 });
@@ -14,3 +13,5 @@ imgFileInput.addEventListener("change", () => {
         imgFileText.innerHTML = "No files chosen";
     }
 });
+
+
