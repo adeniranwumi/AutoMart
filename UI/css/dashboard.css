@@ -54,6 +54,19 @@ main{
     width: 25%;
     float: left;
     margin-top: 20px;
+    position: relative;
+}
+
+div.top-right{
+    position: absolute;
+    top: 10px;
+    left: 70px;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.top-right:hover{
+    background-color: #b70e17 !important;
 }
 
 .row ::after{
@@ -82,7 +95,7 @@ main{
 }
 .card div h2, .modal-content div h2{
     font-family: 'Roboto Slab';
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 900;
     text-align: center;
     color: white;
