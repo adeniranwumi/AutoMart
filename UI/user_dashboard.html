@@ -11,15 +11,31 @@
         <header class="dash-header">
             <a href="landing_page.html" class="header-brand">AutoCart</a>
 
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Buy Cars</a></li>
-                    <li><a href="post_ad.html">Sell Cars</a></li>
-                    <li><a href="view-all-orders.html">Orders</a></li>
-                    <li id="no-border"><a href="#">Posts</a></li>
-                </ul>
-            </nav>
+            <div class="imp-nav">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Buy Cars</a></li>
+                            <li><a href="post_ad.html">Sell Cars</a></li>
+                            <li><a href="view-all-orders.html">Orders</a></li>
+                            <li id="no-border"><a href="#">Posts</a></li>
+                        </ul>
+                    </nav>
+        
+                    <div class="filter">
+                        <select id="filter">
+                            <option>Filter Page</option>
+                            <option>Manufacturer</option>
+                            <option>Make</option>
+                            <option>Sold</option>
+                            <option>Unsold</option>
+                            <option>Car</option>
+                            <option>Truck</option>
+                            <option>Bus</option>
+                        </select>
+                    </div>
+            </div>
+        
         </header>
         
         <main class="dashboard-body">
@@ -192,5 +208,10 @@
             </div>
         
         </footer>
+        <script>
+            document.querySelector("select#filter").addEventListener('change', function(e) {
+                window.location.assign(window.location.pathname + "?filterBy=" + e.target.value)
+            });
+        </script>
     </body> 
 </html>       

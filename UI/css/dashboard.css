@@ -1,8 +1,16 @@
 header.dash-header{
     background-color: #b70e17;
     width: 100%;
-    height: 100px;
+    min-height: 100px;
+    position: relative;
 }
+
+/* div.filter{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+ */
 
 header nav ul{
     margin: 0 auto;
@@ -34,6 +42,41 @@ header.dash-header nav ul li a{
     text-align: center;
     padding: 15px 0;
     color: white;
+}
+
+.imp-nav{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.imp-nav nav{
+    width: 100%;
+}
+.imp-nav nav:last-child{
+    display: flex;
+    flex-flow: row-reverse nowrap;
+}
+div.filter{
+    padding-bottom: 5px;
+    margin-right: 5%;
+}
+
+div.filter select{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 5px;
+    background:white;
+    outline: none;
+    border: none;
+    color: #b70e17;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+div.filter p{
+    margin: 10px;
 }
 
 main{
@@ -110,11 +153,24 @@ div.top-right{
     font-size: 20px;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 768px){
+    div.filter{
+        margin-right: 0px;
+    }
     .column{
         width: 100%;
         display: block;
         margin-bottom: 15px;
+    }
+
+    div.top-right{
+        width: 20%;
+        top: 10px;
+        left: 110px;
+    }
+
+    div.filter{
+        display: block;
     }
 }
 
