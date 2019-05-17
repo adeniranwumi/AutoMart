@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/dashboard.css">   
         <link rel="stylesheet" type="text/css" href="css/core.css">
+        <link rel="stylesheet" type="text/css" href="css/all-orders.css">
         <title>Posts</title>
     </head>
     <body>
@@ -22,8 +23,43 @@
             </nav>
         </header>
     
-        <main>
-    
+        <main class="order-main">
+            <h2 class="list-orders-heading">All Orders</h2>
+            <div class="order-list">
+            
+                <div class="order-list-item">
+                    <div class="img-wrapper">
+                        <img src="./images/blue_car.jpg" alt="little_blue_car">
+                    </div>
+                    <div class="item-details">
+                        <p class="img-p">Manufacturer: <span> Audi</span></p>
+                        <p class="img-p">Model: <span>iJ48h</span></p>
+                        <p class="img-p">Body type: <span> Car</span></p>
+                        <p class="img-p">Vehicle condition: <span> New</span></p>
+                        <p class="img-p">Color: <span> Black</span></p>
+                        <p class="img-p">Mileage: <span> 3,000 km</span></p>
+                        <p class="img-p">Year of expiration of tyres: <span> 4</span></p>
+                        <p class="img-p">Car doors: <span> 4</span></p>
+                        <p class="img-p">Number of seats: <span>4</span></p>
+                        <p class="img-p">Seat type: <span> Leather</span></p>
+                        <p class="img-p">Price: <span id="car-price">18,567,000 </span></p>
+
+                        <input class="hide-content" type="text" id="edit-price-input">
+
+                        <a id="update-price-btn" class="hide-content" href="#">
+                                <div class="edit-btn">
+                                    <h2>Update Price</h2>
+                                </div>
+
+                        <a href="#" id="edit-price">
+                            <div class="edit-btn">
+                                <h2>Edit Price</h2>
+                        </div>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
         </main>
     
         <footer>
