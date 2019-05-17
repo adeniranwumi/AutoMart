@@ -184,7 +184,7 @@ footer ul li a{
     text-align: center;
 }
 
-input[type = "text"], input[type= "password"]{
+input[type = "text"], input[type= "password"], textarea, select{
     width: 100%;
     box-sizing: border-box;
     padding: 12px 5px;
@@ -197,6 +197,10 @@ input[type = "text"], input[type= "password"]{
     margin: 5px;
     font-weight: bold;
     font-size: 15px;
+}
+
+select{
+    color: #bf1313;
 }
 
 input[type = "submit"]{

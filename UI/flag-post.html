@@ -5,12 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/dashboard.css">   
         <link rel="stylesheet" type="text/css" href="css/core.css">
+        <link rel="stylesheet" type="text/css" href="css/landing.css">
         <title>Flag Post</title>
     </head>
     <body>
         <header class="dash-header">
-            <a href="landing_page.html" class="header-brand">AutoCart</a>
-    
+            <a href="landing_page.html" class="header-brand" style="color:white">AutoCart</a>
             <nav>
                 <ul>
                     <li><a href="user_dashboard.html">Home</a></li>
@@ -21,7 +21,24 @@
                 </ul>
             </nav>
         </header>
-    
+        
+        <main class="body-image">
+            <div class="wrap">
+                <h2>Spotted a suspicious post? Tell us about it</h2>
+                <form>
+                    <input type="text" placeholder="Email address..." required>
+                    <select>
+                            <option value="">Select a reason for your suspicion</option>
+                            <option value="Pricing">Pricing</option>
+                            <option value="Strange demands">Strange demands</option>
+                            <option value="Previous fraud activities">Previous fraud activities</option>
+                          </select>
+                    <textarea rows="4" cols="50" placeholder="Give us more details......"></textarea>
+                    <input type="submit" value="Report Post" required>
+                </form>
+            </div>
+        </main>
+
         <footer>
             <ul id="footer-list">
                 <li><a href="#">Home</a></li>
