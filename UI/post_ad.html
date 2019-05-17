@@ -26,12 +26,40 @@
             <div class="wrap">
                 <h2>Want to sell a car? Please give a brief description below</h2>
                 <form>
-                    <input type="text" placeholder="Manufaturer..." required>
+                    <input type="text" placeholder="Manufacturer..." required>
+
                     <input type="text" placeholder="Model..." required>
+
                     <input type="text" placeholder="Body type..." required>
+
                     <input type="text" placeholder="New or used?..." required>
+
                     <input type="text" placeholder="Price..." required>
+
+                    <select>
+                        <option value="">Vehicle condition</option>
+                        <option value="New">New</option>
+                        <option value="Used">Used</option>
+                    </select>
+
+                    <input type="text" placeholder="Color" required> 
+
+                    <input type="text" placeholder="Mileage" required> 
+
+                    <input type="text" placeholder="Year of expiration of tyres" required> 
+
+                    <input type="text" placeholder="Car doors" required> 
+
+                    <input type="text" placeholder="Number of seats" required> 
+
                     <input type="file" id="img-file-input" hidden ="hidden">
+
+                    <select>
+                        <option value="">Seat type</option>
+                        <option value="New">Leather</option>
+                        <option value="Used">Cloth</option>
+                    </select>
+
                     <button type="button" id="choose-file-btn">CHOOSE A FILE</button>
                     <span id="img-file-txt"> No files chosen</span>
                     <input type="submit" value="Post Car" required>
