@@ -1,0 +1,36 @@
+{
+  "name": "automart",
+  "version": "1.0.0",
+  "description": "API endpoints for Automart app",
+  "main": "./src/server.js",
+  "scripts": {
+    "test-init": "./node_modules/.bin/jasmine init",
+    "test": "./node_modules/.bin/jasmine",
+    "build": "babel ./src/server.js --out-dir build",
+    "dev-start": "babel-watch ./src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adeniranwumi/AutoMart.git"
+  },
+  "author": "Omowunmi Adeniran",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.0",
+    "moment": "^2.24.0",
+    "node-fetch": "^2.6.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/register": "^7.4.4",
+    "babel-watch": "^7.0.0",
+    "jasmine": "^3.4.0"
+  },
+  "bugs": {
+    "url": "https://github.com/adeniranwumi/AutoMart/issues"
+  },
+  "homepage": "https://github.com/adeniranwumi/AutoMart#readme"
+}
