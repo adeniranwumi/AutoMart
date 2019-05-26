@@ -13,6 +13,7 @@ class User {
 
     create(data) {
         const id = uuid.v4();
+
         this.users[id] = {
             email: data.email,
             firstName: data.firstname,
@@ -36,8 +37,8 @@ class User {
 
     }
 
-    delete() {
-
+    delete(user_id) {
+        delete this.users[user_id];
     }
 }
 
