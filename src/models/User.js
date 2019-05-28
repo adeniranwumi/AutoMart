@@ -15,14 +15,16 @@ class User {
         const id = uuid.v4();
 
         this.users[id] = {
-            email: data.email,
-            firstName: data.firstname,
-            lastName: data.lastName,
-            password: data.password,
-            address: data.address,
+            email: data.email || '',
+            firstName: data.firstName || '',
+            lastName: data.lastName || '',
+            password: data.password || '',
+            address: data.address || '',
             is_admin: data.is_admin,
             createdOn: moment.now()
         }
+
+        return this.users[id];
     }
 
     update(data) {
@@ -42,4 +44,4 @@ class User {
     }
 }
 
-export default User;
+export default new User();
