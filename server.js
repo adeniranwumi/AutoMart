@@ -17,6 +17,7 @@ app.get("/", (req, res, next) => {
 });
 
 app.post("/api/v1/users", User.create);
+app.get("/api/v1/users", User.getAll);
 
 export const server = app.listen(3000, () => {
     console.log("Listening on port ...");

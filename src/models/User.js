@@ -27,12 +27,16 @@ class User {
         return this.users[id];
     }
 
+    login(data){
+        
+    }
+
     update(data) {
 
     }
 
-    getAll() {
-
+    findAll() {
+        return this.users;
     }
 
     getUser(user_id) {
