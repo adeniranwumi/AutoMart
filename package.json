@@ -27,6 +27,9 @@
     "@babel/preset-env": "^7.4.5",
     "@babel/register": "^7.4.4",
     "babel-watch": "^7.0.0",
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
     "jasmine": "^3.4.0"
   },
   "bugs": {
