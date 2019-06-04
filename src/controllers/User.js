@@ -16,6 +16,10 @@ const User = {
    getAll(req,res){
         const users = UserModel.findAll();
         return res.status(200).send(users);
+   },
+
+   login(req,res){
+        
    }
 
 

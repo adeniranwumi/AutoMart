@@ -28,7 +28,7 @@ class User {
     }
 
     login(data){
-        
+        return this.users[id];
     }
 
     update(data) {
@@ -40,7 +40,6 @@ class User {
     }
 
     getUser(user_id) {
-
     }
 
     delete(user_id) {

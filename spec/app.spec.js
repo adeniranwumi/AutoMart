@@ -1,5 +1,5 @@
 import fetch from 'node-fetch';
-import { server, test_message } from '../src/server';
+import { server, test_message } from '../server';
 
 describe("Server", () => {
     afterAll(() => {
