@@ -1,5 +1,5 @@
 import fetch from 'node-fetch';
-import { server } from '../src/server';
+import server from '../src/server';
 import { message, testRootUrl } from '../src/helpers/constants';
 
 describe("Server GET Root API endpoint", () => {
