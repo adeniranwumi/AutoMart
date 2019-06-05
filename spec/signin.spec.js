@@ -1,21 +1,27 @@
 import fetch from 'node-fetch';
 import { server } from '../src/server';
 import { testUserData } from '../src/config/gens';
-import { devDomain, userSignUpUrl } from '../src/helpers/constants';
+import { devDomain, userSignInUrl, userSignUpUrl } from '../src/helpers/constants';
 
-describe("User SignUp", () => {
-    const postBody = testUserData;
+describe("User SignIn", () => {
+    const postBody = {        
+        email: testUserData.email,
+        password: testUserData.password
+    }
 
     let data = {}, user = {};
 
     beforeAll((done) => {
-        fetch(devDomain + userSignUpUrl, { 
+
+        fetch(devDomain + userSignInUrl, { 
             method: 'POST',
             body: JSON.stringify(postBody),
             headers: { 'Content-Type': 'application/json' }
         })
         .then(res => {
+            console.log(res);
             res.json().then(body => {
+                console.log(body);
                 data.body = body.data;
                 user = data.body.user;
                 data.status = body.status;
@@ -38,23 +44,23 @@ describe("User SignUp", () => {
     });
 
     it("should return the user email submitted", () => {
-        expect(user.email).toEqual(postBody.email);
+        expect(user.email).toEqual(testUserData.email);
     });
 
     it("should return the user firstName submitted", () => {
-        expect(user.firstName).toEqual(postBody.firstName);
+        expect(user.firstName).toEqual(testUserData.firstName);
     });
 
     it("should return the user lastName submitted", () => {
-        expect(user.lastName).toEqual(postBody.lastName);
+        expect(user.lastName).toEqual(testUserData.lastName);
     });
 
     it("should return the user password submitted", () => {
-        expect(user.password).toEqual(postBody.password);
+        expect(user.password).toEqual(testUserData.password);
     });
 
     it("should return the user address submitted", () => {
-        expect(user.address).toEqual(postBody.address);
+        expect(user.address).toEqual(testUserData.address);
     });
 
     it("should return the user creation timestamp", () => {

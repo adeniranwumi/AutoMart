@@ -1,6 +1,7 @@
 import UserModel from '../models/User';
 import Response from '../helpers/Response';
 import { generateToken } from '../config/jwt';
+import { generateId } from '../config/gens';
 
 const User = {
   create(req, res) {
@@ -23,7 +24,31 @@ const User = {
   },
 
   login(req, res) {
+    const {
+      email, password
+    } = req.body;
 
+    if (!email || !password) {
+      return res.send(Response.error('All fields are required!!!'));
+    }
+
+    //Fetch user
+    const user = UserModel.getUser(generateId(email));
+
+    if(!user) {
+      return res.send(Response.error('User not found.'));
+    }
+
+    if(user.password !== password) {
+      return res.send(Response.error('Incorrect login details.'));
+    }
+
+    const data = {
+      token: generateToken(user.id),
+      user: user
+    }
+
+    return res.send(Response.success(data));
   },
 
 };

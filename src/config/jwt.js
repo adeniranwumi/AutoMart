@@ -1,7 +1,6 @@
 import jwt from 'jsonwebtoken';
 
-// const secret = "wunmis-andela-automart-challenge";
-const secret = "wunmis-andela";
+const secret = "wunmis-andela-automart-challenge";
 
 export const generateToken = (payload) => {
     //synchronous token generation
