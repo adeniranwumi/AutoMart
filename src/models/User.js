@@ -1,5 +1,4 @@
 import moment from 'moment';
-import uuid from 'uuid';
 import { generateId } from '../config/gens';
 
 class User {
@@ -15,7 +14,7 @@ class User {
   create(data) {
     const id = generateId(data.email);
     this.users[id] = {
-      id: id,
+      id,
       email: data.email || '',
       firstName: data.firstName || '',
       lastName: data.lastName || '',

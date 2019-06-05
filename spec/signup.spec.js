@@ -1,5 +1,5 @@
 import fetch from 'node-fetch';
-import { server } from '../src/server';
+import server from '../src/server';
 import { testUserData } from '../src/config/gens';
 import { devDomain, userSignUpUrl } from '../src/helpers/constants';
 

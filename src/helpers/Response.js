@@ -1,17 +1,17 @@
 const Response = {
-    success: function (data) {
-        return {
-            status: 200,
-            data: data
-        }
-    },
+  success(data) {
+    return {
+      status: 200,
+      data,
+    };
+  },
 
-    error: function (reason) {
-        return {
-            status: 400,
-            error: reason
-        }
-    }
-}
+  error(reason) {
+    return {
+      status: 400,
+      error: reason,
+    };
+  },
+};
 
 export default Response;

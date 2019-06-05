@@ -6,47 +6,47 @@ import { generateId } from '../config/gens';
 const User = {
   create(req, res) {
     const {
-      email, firstName, lastName, password, address
+      email, firstName, lastName, password, address,
     } = req.body;
 
     if (!email || !firstName || !lastName || !password || !address) {
       return res.send(Response.error('All fields are required!!!'));
     }
-    
+
     const user = UserModel.create(req.body);
 
     const data = {
       token: generateToken(user.id),
-      user: user
-    }
-    
+      user,
+    };
+
     return res.send(Response.success(data));
   },
 
   login(req, res) {
     const {
-      email, password
+      email, password,
     } = req.body;
 
     if (!email || !password) {
       return res.send(Response.error('All fields are required!!!'));
     }
 
-    //Fetch user
+    // Fetch user
     const user = UserModel.getUser(generateId(email));
 
-    if(!user) {
+    if (!user) {
       return res.send(Response.error('User not found.'));
     }
 
-    if(user.password !== password) {
+    if (user.password !== password) {
       return res.send(Response.error('Incorrect login details.'));
     }
 
     const data = {
       token: generateToken(user.id),
-      user: user
-    }
+      user,
+    };
 
     return res.send(Response.success(data));
   },
