@@ -15,6 +15,7 @@ class User {
     const id = uuid.v4();
 
     this.users[id] = {
+      id: id,
       email: data.email || '',
       firstName: data.firstName || '',
       lastName: data.lastName || '',

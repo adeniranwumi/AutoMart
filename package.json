@@ -2,12 +2,12 @@
   "name": "automart",
   "version": "1.0.0",
   "description": "API endpoints for Automart app",
-  "main": "server.js",
+  "main": "./src/server.js",
   "scripts": {
     "test-init": "./node_modules/.bin/jasmine init",
     "test": "./node_modules/.bin/jasmine",
-    "build": "babel server.js --out-dir build",
-    "dev-start": "babel-watch server.js"
+    "build": "babel ./src/server.js --out-dir build",
+    "dev-start": "babel-watch ./src/server.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.0",
+    "jsonwebtoken": "^8.5.1",
     "moment": "^2.24.0",
     "node-fetch": "^2.6.0",
     "uuid": "^3.3.2"
