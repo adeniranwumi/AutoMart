@@ -13,3 +13,18 @@ export const testUserData = {
   password: 'abcdef',
   address: '12 Stuff rd',
 };
+
+export const testAdData = {
+  email: 'abcdefg@email.com',
+  manufacturer: 'Toyota',
+  model: 'Corolla 9pij',
+  bodyType: 'Car',
+  vehicleCondition: 'New',
+  color: 'Pink',
+  mileage: '6000 km',
+  tyreExpiration: '2021',
+  carDoors: '4',
+  noOfSeats: '5',
+  seatType: 'leather',
+  imgFile: 'ugbjn.ujiooo',
+};
