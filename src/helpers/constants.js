@@ -12,5 +12,6 @@ export const userSignUpUrl = `${rootUrl}/sign-up`;
 export const userSignInUrl = `${rootUrl}/sign-in`;
 export const userDetailsUrl = `${rootUrl}/user`;
 export const carSaleAdUrl = `${rootUrl}/car`;
+export const purchaseOrderUrl = `${rootUrl}/order`;
 
 export const message = 'This is Automart and you are seeing an invalid endpoint on this version of the API';
