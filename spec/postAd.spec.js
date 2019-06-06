@@ -17,12 +17,11 @@ describe('Post a car ad', () => {
             headers: { 'Content-Type': 'application/json' }
         })
         .then(res => {
-            console.log(res);
+            // console.log(res);
             res.json().then(body => {
-                console.log(body);
                 data.body = body.data;
                 car = data.body;
-                console.log(car);
+                // console.log(car);
                 data.status = body.status;
             })
             .catch( err => { console.log(err) });

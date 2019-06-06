@@ -28,3 +28,13 @@ export const testAdData = {
   seatType: 'leather',
   imgFile: 'ugbjn.ujiooo',
 };
+
+export const testOrderData = {
+  email: 'wumi@ade.com',
+  phone_number: '0804859322', 
+  billing_address: '23 Lucky Lane',
+  quantity: '3',
+  car_id: '43ngvikgf',
+  price: '9,000,000',
+  price_offered: '7,450,000',
+};
