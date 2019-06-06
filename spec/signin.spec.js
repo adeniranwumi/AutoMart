@@ -19,9 +19,9 @@ describe("User SignIn", () => {
             headers: { 'Content-Type': 'application/json' }
         })
         .then(res => {
-            console.log(res);
+            // console.log(res);
             res.json().then(body => {
-                console.log(body);
+                // console.log(body);
                 data.body = body.data;
                 user = data.body.user;
                 data.status = body.status;
