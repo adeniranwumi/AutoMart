@@ -36,3 +36,5 @@ class Car{
 
     }
 }
+
+export default new Car();

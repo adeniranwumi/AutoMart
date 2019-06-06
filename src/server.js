@@ -1,6 +1,7 @@
 import express from 'express';
 import { message } from './helpers/constants';
 import user from './routes/user';
+import car from './routes/car';
 
 const app = express();
 
@@ -10,6 +11,7 @@ app.use(express.urlencoded({
 }));
 
 user(app);
+car(app);
 
 app.get('*', (req, res, next) => {
   res.send({ ...req.query, message });
